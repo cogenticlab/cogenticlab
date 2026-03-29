@@ -1,9 +1,5 @@
-# Cogentic Hub - 万级私有AI工具库治理平台
-无论再多的工具，都可以放心地让AI Agent去使用。省时省力省心省Token
-
-从万级工具池中找到目标工具，平均仅需 1000 Token
-
-让 AI Agent 安全驾驭万级私有工具库
+# Cogentic Platform - 万级私有AI工具库治理平台
+![cogentic_hub_features.png](assets/image/cogentic_hub_features.png)
 
 **解决MCP三大痛点**：
 - Token
@@ -39,31 +35,19 @@
 
 ## 主要部件：
 
-1. Cogentic Hub Platform
+1. Cogentic Platform
    - Cogentic Hub：管理工具及团队分享
    - Cogentic Link：连接AI Agent及工具调用
    - Cogentic Router：建立AI Agent与工具间的连接，完成工具调用
-2. Cogentic Tool Hub CLI：AI Agent可以直接使用活在Skill中使用
-3. Cogentic Lab：连接私有工具并注册到Cogentic Hub；与Cogentic Router一起建立AI Agent与工具间的连接，完成工具调用
-   - 用户可以在不同环境安装多个Cogentic Lab，每个Cogentic Lab都可以连接不同的工具源
-   - AI Agent可以通过CLI访问到任何一个Cogentic Lab上连接的工具
+2. Cogentic CLI：AI Agent可以直接使用活在Skill中使用
+3. Cogentic Hub：连接私有工具并注册到Cogentic Hub；与Cogentic Router一起建立AI Agent与工具间的连接，完成工具调用
+   - 用户可以在不同环境安装多个Cogentic Hub，每个Cogentic Hub都可以连接不同的工具源
+   - AI Agent可以通过CLI访问到任何一个Cogentic Hub上连接的工具
 
 ## 工具渐进式披露流程
 支持AI Agent渐进式访问万级企业私有工具库
 
-```mermaid
-graph TB
-    A[Agent Skills] --> B[Cogentic Tool Library Skill]
-    B --> C[Tool Library Keys]
-    subgraph 渐进式披露流程 [<span></span>]
-      C --> D[Tool Categories]
-      D --> E[Available Tools]
-      E --> F[Tool]
-      E --> |需要工具描述及参数| H[Tool Description]
-      H --> F
-    end
-    F --> K[Tool Call]
-```
+![cogentic_cli_workflow.png](assets/image/cogentic_cli_workflow.png)
 
 ## 与其他MCP CLI对比
 
