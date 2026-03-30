@@ -36,7 +36,7 @@
 ## 主要部件：
 
 1. Cogentic Platform
-   - Cogentic Hub：管理工具及团队分享
+   - Cogentic PolyCenter：管理工具及团队分享
    - Cogentic Link：连接AI Agent及工具调用
    - Cogentic Router：建立AI Agent与工具间的连接，完成工具调用
 2. Cogentic CLI：AI Agent可以直接使用活在Skill中使用
