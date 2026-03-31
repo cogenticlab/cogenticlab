@@ -23,7 +23,8 @@
 ## 优势亮点：
 
 1. AI Agent可以通过Cogentic Hub CLI访问到用户所有已注册的工具
-   - 使用不同的Key可以访问到不同的工具集
+   - 建立Tool Library，按需分配工具
+   - 使用不同Tool Library 的Key可以访问到不同的工具集
    - 直接访问MCP工具，无需MCP Client支持
    - 支持Http API方式调用
 2. 支持工具渐进式披露
